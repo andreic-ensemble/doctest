@@ -28,6 +28,8 @@ If a connection cannot be made to the primary server, and [max retries is exhaus
 
 >[!important]
 >The backend servers must be configured for replication/mirroring. Please check the vendor documentation for assistance with configuring replication for your backends.
+> an other line 
+> My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 
 For SQL Server backends, make sure the database connector user exists on the mirrored server. User logins created on a database server are at the instance level and are not automatically propagated to mirrored instances (because mirroring works at the database level).
 
@@ -45,6 +47,7 @@ sid=0xC82A450E586CCC4CADDD802E9D9CA404;`
 
 >[!important]
 >In the case where the principal/primary SQL Server is not available, the connector fails over to the mirrored server. Once the principal server is back online, the connector continues to read from the mirror (it essentially becomes the new principal server) until the mirror is not available, in which case it reverts to the original primary server.
+>an other line
 
 ## Configuration
 
