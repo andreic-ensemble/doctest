@@ -26,7 +26,27 @@ Figure 5. 1: Configuring a Failover Server for the Backend Database
 
 If a connection cannot be made to the primary server, and [max retries is exhausted](02-configuring-connector-types-and-properties.md#max-retries-on-connection-error), the connector connects to the failover server.
 
->[!important]
+>[!note]
+>The backend servers must be configured for replication/mirroring. Please check the vendor documentation for assistance with configuring replication for your backends.
+> an other line 
+> My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+
+>[!info]
+>The backend servers must be configured for replication/mirroring. Please check the vendor documentation for assistance with configuring replication for your backends.
+> an other line 
+> My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+
+>[!warning]
+>The backend servers must be configured for replication/mirroring. Please check the vendor documentation for assistance with configuring replication for your backends.
+> an other line 
+> My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+
+>[!danger]
+>The backend servers must be configured for replication/mirroring. Please check the vendor documentation for assistance with configuring replication for your backends.
+> an other line 
+> My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+
+>[!tip]
 >The backend servers must be configured for replication/mirroring. Please check the vendor documentation for assistance with configuring replication for your backends.
 > an other line 
 > My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
