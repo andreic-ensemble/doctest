@@ -7,6 +7,38 @@ description: Module 2 Sub 1 Description
 
 Prosciutto ground round drumstick rump pork chop turducken tongue tail turkey porchetta beef ribs ribeye chislic filet mignon shoulder. Pork belly beef ribs burgdoggen, kevin meatloaf turducken tri-tip pork chop t-bone. Filet mignon andouille beef ribs, chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison.
 
+---
+title: Trying out new custom code blocks
+date: "2021-11-02"
+description: "A great way to display your code snippets on your MDX+Gatsby blog."
+---
+
+Here's an example of my new custom code blocks:
+
+```jsx
+// here's a button in React!
+<button
+  onClick={() => {
+    alert("Hello MDX!");
+  }}
+>
+  test
+</button>
+```
+
+Wow! Such code snippets!
+Let's see another, with line highlighting:
+
+```js
+// fizzbuzz in JS
+for (let i = 1; i <= 100; i++) {
+  let out = "";
+  if (i % 3 === 0) out += "Fizz";
+  if (i % 5 === 0) out += "Buzz";
+  console.log(out || i);
+}
+```
+
 # Chapter 6: Database Timestamp Connector
 
 For Oracle, SQL Server, MySQL, MariaDB, and Salesforce backends (using the RadiantOne JDBC driver), a timestamp-based change detection mechanism is available. To leverage this mechanism, your database table must have a column that contains a timestamp/date value associated with updates. For Salesforce, this column is LastModifiedDate. The column used in the timestamp connector must be indexed for performance.
