@@ -44,12 +44,6 @@ Prosciutto ground round drumstick rump pork chop turducken tongue tail turkey po
 
 
 
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
-
 
 ```ruby
 require 'redcarpet'
