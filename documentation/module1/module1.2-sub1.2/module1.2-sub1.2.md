@@ -9,12 +9,27 @@ description: Module 1 Sub 1 Description
 
 Prosciutto ground round drumstick rump pork chop turducken tongue tail turkey porchetta beef ribs ribeye chislic filet mignon shoulder. Pork belly beef ribs burgdoggen, kevin meatloaf turducken tri-tip pork chop t-bone. **Filet mignon andouille beef ribs**, chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork <mark> belly bacon hamburger turkey buffalo ham hock venison.</mark>
 
+# Ordered List
 1. First item
 2. Second item
 3. Third item
     1. Indented item
     2. Indented item
 4. Fourth item
+
+# UnorderedList -
+- First item
+- Second item
+- Third item
+    - Indented item
+    - Indented item
+- Fourth item
+
+# UnorderedList *
+* First item
+* Second item
+* Third item
+* Fourth item
 
 # Chapter 4: Active Directory Connectors
 
