@@ -12,6 +12,17 @@ Prosciutto ground round drumstick rump pork chop turducken tongue tail turkey po
 When a database object is configured as a publisher, triggers are installed on the object and document all changes to a log table. This object name has the syntax `\<table name\>\_LOG`. In the log table, two predefined column names are required: `RLICHANGEID` and `RLICHANGETYPE`. `RLICHANGEID` uniquely identifies one row in the change log table, and `RLICHANGETYPE` identifies the operation (insert, update, delete, abort). The database connector queries the log table to check for changes based on the polling interval.
 
 The `RLI_CON` user (configurable) is the default owner of the log table. This special user can also prevent a constant loop of changes when the database objects have been configured as both a publisher and subscriber. When this user makes changes to the database objects, the connector knows to ignore the change.
+| PORTS | PURPOSE |
+|---|---|
+| TCP 135 | RPC |
+| TCP 139 | NetBIOS |
+| TCP and UDP 389 | LDAP <br /> *This could be used by RadiantOne to get the user information. Some other port may be used. |
+| TCP and UDP 445   | SMB over IP |
+| TCP and UDP 464 | Kerberos change/set password |
+| TCP 636 | LDAPS <br /> *This could be used by RadiantOne to get the user information. Some other port may be used. |
+| TCP 3268 and TCP 3269 | Global Catalog non SSL and SSL <br /> *This could be used by RadiantOne to get the user information. Some other port may be used. |
+| TCP 49152 through 65535 | Dynamic ports |
+
 
 ## Database Connector Failover
 
