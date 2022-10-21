@@ -7,6 +7,11 @@ description: Module 2 Description
 
 Prosciutto ground round drumstick rump pork chop turducken tongue tail turkey porchetta beef ribs ribeye chislic filet mignon shoulder. Pork belly beef ribs burgdoggen, kevin meatloaf turducken tri-tip pork chop t-bone. Filet mignon andouille beef ribs, chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison. [Duck Duck Go](https://duckduckgo.com)
 
+>[!note]
+>If both included and excluded branches are used, an entry must satisfy the conditions defined in both settings to be included in the message. The included branches condition(s) is checked first.
+>If you set this value using the vdsconfig command line utility on Windows, separate the branches with a comma. E.g. `C:\radiantone\vds\bin\>vdsconfig.bat set-connector-property -connectorname o_sead_pcache_proxy\_\_dc_seradiant_dc_dom\_\_seradiantad -propertyid excludedBranches`
+>`-propertyvalue "\[\\"cn=users,dc=seradiant,dc=dom\\",\\"cn=domain groups,dc=seradiant,dc=dom\\"\]".`
+
 | PORTS | PURPOSE | PURPOSE |
 |---|---|---|
 | TCP 135 | RPC | RPC |
