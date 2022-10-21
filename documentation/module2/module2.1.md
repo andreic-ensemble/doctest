@@ -122,8 +122,7 @@ The `Failover Algorithm` property allows you to determine how the cursor value g
 
 | Value | Function | Set this value if…. |
 |---|---|---|
-| 1 | Sets cursor to the minimum changenumber based on the current changelog numbers of the replica servers. In the example described above, changenumber of 97 is used. This is the default setting. | You do not want to lose any events. This may result in many events being replayed. 
-![An image showing the drop-down list for Connector Type with "LDAP" selected, in the Core Properties section of Configure Pipeline](media/image8.png)|
+| 1 | Sets cursor to the minimum changenumber based on the current changelog numbers of the replica servers. In the example described above, changenumber of 97 is used. This is the default setting. | You do not want to lose any events. This may result in many events being replayed. ![An image showing the drop-down list for Connector Type with "LDAP" selected, in the Core Properties section of Configure Pipeline](../media/image8.png)|
 | 2 | Sets cursor to maximum changenumber based on the current changelog numbers of the replica servers. In the example described above, changenumber of 99 is used. | You want to minimize the replaying of events during failover. This may result in some events being lost. |
 | 3 | The cursor is not changed. The exact last processed changed stored in the connector cursor would be used. In the example described above, changenumber of 100 is used. | You know that the LDAP servers in the replica have the same changeNumber in `cn=changelog`. 
 
