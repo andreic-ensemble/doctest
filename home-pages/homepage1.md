@@ -3,47 +3,24 @@ title: Homepage 1
 description: Homepage 1 Description
 ---
 
-# Homepage 1
+# Welcome to Radiant Logic DevOps
 
-## Prosciutto ground round drumstick rump pork chop turducken tongue tail turkey porchetta beef ribs ribeye chislic filet mignon shoulder. Pork belly beef ribs burgdoggen, kevin meatloaf turducken tri-tip pork chop t-bone. Filet mignon andouille beef ribs, chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison.
+This site provides resources for DevOps professionals to deploy the RadiantOne platform. Docker images and Kubernetes for orchestration allows for easily deploying the RadiantOne platform in the cloud.
 
-# Section 1
-<section>
-
-  > [Module 1](/module1/home)  
-  > chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison
-
-  > [Module 2](/module2/home2)  
-  > chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison
-
-  > [Module 1](/module1/home)  
-  > chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison
-
-</section>
-
-# Section 2
+# Cloud Deployments
 
 <section>
   
-  > [Module 1](/module1/home)  
-  > chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison
+  > [Docker](/module1/home)  
+  > Radiant Logic provides preconfigured images of RadiantOne in Docker containers. Once deployed, the product is entirely operable. The containers are preconfigured to interoperate with other containers in the stack. 
+  
+  > [Kubernetes](/module1/home)  
+  > You can use Kubernetes to orchestrate the configuration and deployment of RadiantOne. Radiant Logic provides DevOps images for deployments on cloud platforms such as Amazon Web Services (AWS) using Amazon Elastic Kubernetes Service (EKS) and Microsoft Azure Kubernetes Service (AKS).
 
-  > [Module 2](/module1/home)  
-  > chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison
-
-  > [Module 3](/module1/home)  
-  > chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison
+  > [Helm](/module1/home)  
+  > Helm charts for FID and Zookeeper deployment
   
-   > [Module 4](/module1/home)  
-  > chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison
+   > [Terraform](/module1/home)  
+  > Terraform is an open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services. Terraform codifies cloud APIs into declarative configuration files.
   
-   > [Module 5](/module1/home)  
-  > chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison
-  
-   > [Module 6](/module1/home)  
-  > chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison
-  
-   > [Module 7](/module1/home)  
-  > chicken boudin spare ribs porchetta. Landjaeger doner sausage cow beef, pig ground round jowl pork belly bacon hamburger turkey buffalo ham hock venison
-
 </section>
