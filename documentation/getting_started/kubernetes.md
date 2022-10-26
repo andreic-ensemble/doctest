@@ -15,9 +15,8 @@ In addition, you should:
 
 1. Have a supported Kubernetes cluster running in the cloud. A commonly deployed Kubernetes cluster is [Amazon Elastic Kubernetes Service](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluster.html). 
 For a highly available architecture, the underlying Kubernetes cluster should support at least two pods running RadiantOne nodes and three pods running ZooKeeper. 
-<br>
-<br>
-<mark>Note - Kubernetes v1.18+ is required. The pods running RadiantOne nodes need at least 2 CPUs and 4 GiB memory. The pods running ZK need at least 2 CPUs and 2 GiB memory.</mark><br>
+
+<mark>Note - Kubernetes v1.18+ is required. The pods running RadiantOne nodes need at least 2 CPUs and 4 GiB memory. The pods running ZK need at least 2 CPUs and 2 GiB memory.</mark>
 
 2. Install and configure the Kubernetes kubectl command-line tool on the machine where you will manage the Kubernetes cluster from.  This utility controls the Kubernetes Cluster. An example is [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-windows.html).
 
@@ -32,19 +31,18 @@ The StatefulSet manifest, zk-aws.yaml, creates a ZooKeeper cluster that consists
 ##### Installation
 1. Update zk-aws.yaml file if necessary. 
 You can modify the ZooKeeper ports, number of nodes (ZOOKEEPER_FLEET_SIZE) in the ensemble (3 is the default, but you can make it 5 if needed), name of the Kubernetes service linked to the ZooKeeper nodes (make sure this matches what is defined in the configmap.yaml).
-<br>
+
 <mark>Note – Do not use “TABS” for spacing in the .yaml file.  Use the space bar to indent as needed.</mark>
-<br>
+
 2. Open a command prompt and navigate to the location where you have installed the kubectl command line tool. 
 
 3. Create the ZooKeeper StatefulSet from the zk.yaml. Indicate the path to the ZooKeeper yaml file. In the example shown below, it is located in the same location at the kubectl tool.
 ```
 kubectl --namespace=prod apply -f zk-aws.yaml
 ```
-<br>
-<mark>Note – if no namespace is used in the Kubernetes cluster, you can omit the
---namespace property.</mark>
-<br>
+
+<mark>Note – if no namespace is used in the Kubernetes cluster, you can omit the --namespace property.</mark>
+
 
 ##### Validating the ZooKeeper Service
 Before installing RadiantOne nodes, make sure the ZooKeeper service is running. There should be one leader node and two follower nodes (if you kept the default fleet size of 3). The steps in this section describe how to do this from the Kubernetes cluster web dashboard.
@@ -52,19 +50,19 @@ Before installing RadiantOne nodes, make sure the ZooKeeper service is running. 
 1. From the Kubernetes web dashboard, navigate to Workloads -> Stateful Sets.
 2. Click the Stateful Set corresponding to your ZooKeeper deployment.
 3. In the Pods section, click zk-0 (in this example the name used in the ZooKeeper yaml is “zk”).
-<br>
+
 <img src="./img/kubernetesdashboard.jpg" alt="Kubernetes Dashboard" style="height: 250px; width:1000px;"/>
-<br>
+
 4. Click ->EXEC, this opens a new browser window.
 5. In the SHELL window, run this command: 
 ```
 export JAVA_HOME=/opt/radiantone/rli-zookeeper-external/jdk/jre/;/opt/radiantone/rli-zookeeper-external/zookeeper/bin/zkServer.sh status
 ```
-<mark>Note - Use Shift+Insert to Paste.</mark><br><br>
+<mark>Note - Use Shift+Insert to Paste.</mark>
 The returned value should indicate “Mode: follower” or “Mode: Leader”. The ZooKeeper in the following example is a follower node.
-<br>
+
 <img src="./img/followerzk.jpg" alt="Follower ZK Node" style="height: 150px; width:1000px;"/>
-<br>
+
  
 6. Close the Browser tab and go back to the Kubernetes Dashboard.
 7. Repeat steps 3-6 for the other ZooKeeper nodes: zk-1 and zk-2. Following this example, one should be a follower node and one should be a leader node. The results are shown below.
@@ -85,7 +83,7 @@ When “ruok” returns “error” : null, this means the ZooKeeper node is run
 <br>
 When “is_read_only” returns “read_only” : false, this means the ZooKeeper node is not in a read-only state. If a ZooKeeper node is in a read-only state, something is wrong and the RadiantOne nodes will not allow any write operations during this time. Most likely ZooKeeper has lost the quorum and can’t communicate with more than half of the other ZooKeeper nodes.
 
-<img src="../img/zookeepercheck.jpg" alt="ZooKeeper State Check" style="height: 150px; width:500px;"/>
+<img src="./img/zookeepercheck.jpg" alt="ZooKeeper State Check" style="height: 150px; width:500px;"/>
 
 #### RadiantOne Nodes
 The StatefulSet manifests (configmap.yaml and fid.yaml) create a RadiantOne node. After the node is deployed, you can scale up the number of nodes as needed. Although the Kubernetes web console can be used to create new stateful sets, the steps below leverage the kubectl command line tool. Perform the following steps on the machine where you have downloaded the kubectl command line utilty and saved the yaml files.
@@ -107,9 +105,9 @@ The configuration can be managed from the RadiantOne Main Control Panel, kubectl
 After the RadiantOne nodes are deployed, you can view the services from the Kubernetes web dashboard and click on the link to launch the Main Control Panel.
 
 1. From the Kubernetes web dashboard, navigate to Discovery and Load Balancing -> Services.
-<br>
-<img src="../img/kubernetesservices.jpg" alt="Kubernetes Services" style="height: 350px; width:1000px;"/>
-<br>
+
+<img src="./img/kubernetesservices.jpg" alt="Kubernetes Services" style="height: 350px; width:1000px;"/>
+
 The external endpoints, which point to the AWS Elastic Load Balancer (ELB) that is in front of the RadiantOne services, are shown for the RadiantOne Control Panel service 
 (<node_name>-cp). There are four external endpoints configured. Two point to the Control Panel (one is for the non-ssl port and the other is for the ssl port). Two point to the RadiantOne FID web services (SCIM, DSML/SPML, ADAP) ports which are required by the RadiantOne Main Control Panel -> Directory Browser tab. 
 
@@ -134,9 +132,9 @@ kubectl exec -it -n demo myfid-0 -- vdsconfig.sh restore-hdapstore -namingcontex
 kubectl exec -it -n demo myfid-0 -- vdsconfig.sh export-ldif -basedn o=local -ldif local.ldif -scope sub
 ```
 The local.ldif file is created at /opt/radiantone/vds/vds_server/ldif/export/ by default.
-<br>
-<img src="../img/ldifexport.jpg" alt="LDIF Export Example" style="height: 150px; width:600px;"/>
-<br>
+
+<img src="./img/ldifexport.jpg" alt="LDIF Export Example" style="height: 150px; width:600px;"/>
+
 
 ### Kubernetes Web Dashboard
 To access the shell from the Kubernetes web dashboard:
@@ -144,13 +142,13 @@ To access the shell from the Kubernetes web dashboard:
 1. Go to Workloads -> Pods.
 
 2. Select the RadiantOne pod you want to manage (e.g. myfid-0) and click ->EXEC. The shell window opens.
-<br>
-<img src="../img/fidnode.jpg" alt="FID Node" style="height: 300px; width:1000px;"/>
-<br> 
+
+<img src="./img/fidnode.jpg" alt="FID Node" style="height: 300px; width:1000px;"/>
+
 3. Go to the /vds folder to access the file system of RadiantOne. The example below depicts how to navigate to the log files below /vds/vds_server/logs.
-<br>
+
 <img src="../img/r1filesystem.jpg" alt="RadiantOne File System" style="height: 150px; width:1000px;"/>
-<br> 
+
 
 ### Enabling FIPS-Mode
 If your RadiantOne deployment must support FIPS 140-2 certified crypto operations for data-in-transit and data-at-rest, perform the following before enabling FIPS-mode.
