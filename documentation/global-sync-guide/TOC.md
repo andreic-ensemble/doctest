@@ -6,7 +6,7 @@ description: Global Synchronization Guide TOC Description
 # Global Synchronization Guide {global-synchronization-guide}
 
 - [Introduction](introduction.md)
-- Concepts and Definitions {#concepts-and-definitions}
+- [Concepts and Definitions](#concepts-and-definitions)
   - [Terms and Processes](concepts-and-definitions/terms-and-processes.md)
   - [Data Source](concepts-and-definitions/data-source.md)
   - [Synchronization Object](concepts-and-definitions/synchronization-object.md)
@@ -15,23 +15,23 @@ description: Global Synchronization Guide TOC Description
   - [Agents and Connectors](concepts-and-definitions/agents-and-connectors.md)
   - [Queues](concepts-and-definitions/queues.md)
   - [Password Synchronization](concepts-and-definitions/password-synchronization.md)
-- Configuration {#configuration}
+- [Configuration](#configuration)
   - [High-Level Steps](configuration/high-level-steps.md)
   - [Configure Data Sources](configuration/configure-data-sources.md)
   - [Configure Synchronization Topologies](configuration/configure-synchronization-topologies.md)
-- Configure Capture Connector {#configure-capture-connector}
+- [Configure Capture Connector](#configure-capture-connector)
   - [Capture Connector Configuration](configure-capture-connector/capture-connector-configuration.md)
   - [Database Connectors](configure-capture-connector/database-connectors.md)
   - [Directory Connectors](configure-capture-connector/directory-connectors.md)
   - [Custom Data Sources](configure-capture-connector/custom-data-sources.md)
-- Transformation {#transformation}
+- [Transformation](#transformation)
   - [Transformation Configuration](transformation/transformation-configuration.md)
   - [Attribute Mappings](transformation/attribute-mappings.md)
 - [Script](transformation/script.md)
-- Rules {#rules}
+- [Rules](#rules)
   - [Rules](rules/rules.md)
   - [Configure Rule Variables](rules/configure-rule-variables.md)
-- Configure Rules {#configure-rules}
+- [Configure Rules](#configure-rules)
   - [Rules Configuration](configure-rules/rules-configuration.md)
   - [Identity Linkage](configure-rules/identity-linkage.md)
   - [Target DN Variable](configure-rules/target-dn-variable.md)
@@ -39,7 +39,7 @@ description: Global Synchronization Guide TOC Description
   - [Conditions](configure-rules/conditions.md)
   - [Actions](configure-rules/actions.md)
   - [Test Rules](configure-rules/test-rules.md)
-- Configure Advanced Options {#configure-advanced-options}
+- [Configure Advanced Options](#configure-advanced-options)
   - [Advanced Options Configuration](configure-advanced-options/advanced-options-configuration.md)
   - [Target Object RDN](configure-advanced-options/target-object-rdn.md)
   - [Target DN Generation](configure-advanced-options/target-dn-generation.md)
@@ -50,7 +50,7 @@ description: Global Synchronization Guide TOC Description
 - [Apply Connector](apply-connector.md)
 - [Delete Topologies](delete-topologies.md)
 - [Uploads](uploads.md)
-- Deployment {#deployment}
+- [Deployment](#deployment)
   - [Fault Tolerance and Recovery](deployment/fault-tolerance-and-recovery.md)
   - [Secure Access to the Queues](deployment/secure-access-to-the-queues.md)
   - [Manage Synchronization](deployment/manage-synchronization.md)
