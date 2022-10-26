@@ -103,7 +103,7 @@ The StatefulSet manifests (configmap.yaml and fid.yaml) create a RadiantOne node
 ```
 kubectl --namespace=prod apply -f C:\Kubernetes\FID
 ```
-{==Note – if no namespace is used in your Kubernetes cluster, you can omit the --namespace property.==}
+<mark>Note – if no namespace is used in your Kubernetes cluster, you can omit the --namespace property.</mark>
  
 ## RadiantOne Configuration
 The configuration can be managed from the RadiantOne Main Control Panel, kubectl command line utility, or from the Kubernetes web dashboard by launching a shell directly on the RadiantOne node/pod you want to administer.
