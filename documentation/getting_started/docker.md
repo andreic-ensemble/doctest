@@ -20,12 +20,12 @@ These instructions guide you through the bootstrap phase of creating and deployi
 
 #### Prerequisites
 1. Install Docker and Docker Compose.
-<br>Windows or macOS: [Install Docker Desktop](https://www.docker.com/get-started)
-<br>Linux: [Install Docker](https://www.docker.com/get-started) and then [Docker Compose](https://github.com/docker/compose)
+Windows or macOS: [Install Docker Desktop](https://www.docker.com/get-started)
+Linux: [Install Docker](https://www.docker.com/get-started) and then [Docker Compose](https://github.com/docker/compose)
 2. Download samples from the [Radiant Logic Git Hub](https://github.com/radiantlogic-devops).
 
 #### Running a sample
-The root directory of each sample contains the ```docker-compose.yaml ``` which describes the configuration of service components. All samples can be run in a local environment by going into the root directory of each one and executing:
+The root directory of each sample contains the `docker-compose.yaml` which describes the configuration of service components. All samples can be run in a local environment by going into the root directory of each one and executing:
 
 ```
 docker-compose up -d
