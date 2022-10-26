@@ -1,3 +1,8 @@
+---
+title: Getting started
+description: Getting started
+---
+
 # Welcome to Radiant Logic DevOps
 This site provides resources for DevOps professionals to deploy the RadiantOne platform. Docker images and Kubernetes for orchestration allows for easily deploying the RadiantOne platform in the cloud.
 
