@@ -57,11 +57,9 @@ Before installing RadiantOne nodes, make sure the ZooKeeper service is running. 
 <br>
 4. Click ->EXEC, this opens a new browser window.
 5. In the SHELL window, run this command: 
-<br>
 ```
 export JAVA_HOME=/opt/radiantone/rli-zookeeper-external/jdk/jre/;/opt/radiantone/rli-zookeeper-external/zookeeper/bin/zkServer.sh status
 ```
-<br>
 <mark>Note - Use Shift+Insert to Paste.</mark><br><br>
 The returned value should indicate “Mode: follower” or “Mode: Leader”. The ZooKeeper in the following example is a follower node.
 <br>
@@ -70,12 +68,10 @@ The returned value should indicate “Mode: follower” or “Mode: Leader”. T
  
 6. Close the Browser tab and go back to the Kubernetes Dashboard.
 7. Repeat steps 3-6 for the other ZooKeeper nodes: zk-1 and zk-2. Following this example, one should be a follower node and one should be a leader node. The results are shown below.
-<br>
 <img src="./img/followerzk2.jpg" alt="Follower ZK Node 2" style="height: 150px; width:1000px;"/>
-<br>
 <img src="./img/leaderzk.jpg" alt="Leader ZK Node" style="height: 125px; width:1000px;"/>
-<br>
- 
+
+
 ##### Checking the ZooKeeper Service via HTTP
 In the example commands used in this section, the ZooKeeper service is named “myzk” and the shell is launched for the pod named myzk-2.
 Run the following to see the commands available:
@@ -88,9 +84,8 @@ A couple of examples are shown below.
 When “ruok” returns “error” : null, this means the ZooKeeper node is running fine. 
 <br>
 When “is_read_only” returns “read_only” : false, this means the ZooKeeper node is not in a read-only state. If a ZooKeeper node is in a read-only state, something is wrong and the RadiantOne nodes will not allow any write operations during this time. Most likely ZooKeeper has lost the quorum and can’t communicate with more than half of the other ZooKeeper nodes.
-<br>
+
 <img src="../img/zookeepercheck.jpg" alt="ZooKeeper State Check" style="height: 150px; width:500px;"/>
-<br>
 
 #### RadiantOne Nodes
 The StatefulSet manifests (configmap.yaml and fid.yaml) create a RadiantOne node. After the node is deployed, you can scale up the number of nodes as needed. Although the Kubernetes web console can be used to create new stateful sets, the steps below leverage the kubectl command line tool. Perform the following steps on the machine where you have downloaded the kubectl command line utilty and saved the yaml files.
@@ -177,18 +172,18 @@ RadiantOne configuration can be migrated from one environment (e.g. dev/qa) to a
 2. Copy the file to the target machine where the kubectl utility is installed. 
 3. Scale down the RadiantOne cluster to one node. From the Kubernetes web dashboard, go to Workloads -> Stateful Sets.
 4. Select the RadiantOne FID stateful set.
-<br>
-{==Note – make sure you are in the correct Namespace!==}
-<br>
+
+<mark>Note – make sure you are in the correct Namespace!<mark>
+
 5. Click SCALE.
 6. Enter 1 for the (total) number of nodes the RadiantOne cluster should have. In the example shown below, there are currently 3 nodes in the RadiantOne cluster and 1 node is desired.
-<br>
-<img src="../img/scaledown.jpg" alt="Scale Down" style="height: 300px; width:500px;"/>
-<br> 
+
+<img src="./img/scaledown.jpg" alt="Scale Down" style="height: 300px; width:500px;"/>
+
  
 7. Click OK. Kubernetes scales down to one node.
 <br>
-{==Note – you must scale down instead of just stopping the RadiantOne services on the nodes. Stopping the services would result in Kubernetes trying to restart them.  By default, when Kubernetes scales down the nodes, they still remain a part of the cluster. If you run cluster.sh list, you still see the nodes, but the RadiantOne services will not be running. This way, Kubernetes does not try to restart the RadiantOne services automatically.==}
+<mark>Note – you must scale down instead of just stopping the RadiantOne services on the nodes. Stopping the services would result in Kubernetes trying to restart them.  By default, when Kubernetes scales down the nodes, they still remain a part of the cluster. If you run cluster.sh list, you still see the nodes, but the RadiantOne services will not be running. This way, Kubernetes does not try to restart the RadiantOne services automatically.</mark>
 <br>
 8. From the machine where the kubectl utility is installed, copy the file that was exported from the dev/qa environment to the RadiantOne leader node (the example below has a RadiantOne node identified as fid-0 in the demo namespace).
 ```
@@ -212,17 +207,15 @@ To add nodes to the existing RadiantOne FID cluster:
 
 1. From the Kubernetes web dashboard, go to Workloads -> Stateful Sets.
 2. Select the RadiantOne FID stateful set.
-<br>
-{==Note – make sure you are in the correct Namespace!==}
-<br>
-<img src="../img/statefulsets.jpg" alt="Stateful Sets" style="height: 400px; width:1000px;"/>
-<br>
+
+<mark>Note – make sure you are in the correct Namespace!</mark>
+<img src="./img/statefulsets.jpg" alt="Stateful Sets" style="height: 400px; width:1000px;"/>
+
  
 3. Click  SCALE.
 4. Enter the number (total) of nodes the RadiantOne cluster should have. In the example shown below, there are currently 2 nodes in the RadiantOne cluster and another node is going to be added.
-<br>
-<img src="../img/scalestatefulsets.jpg" alt="Scale Stateful Sets" style="height: 300px; width:500px;"/>
-<br>
+<img src="./img/scalestatefulsets.jpg" alt="Scale Stateful Sets" style="height: 300px; width:500px;"/>
+
  
 5. Click OK. Kubernetes adds the needed number of nodes. Once they are created, you can see the pods in Workloads -> Pods.
 
@@ -231,12 +224,12 @@ To add nodes to the existing RadiantOne FID cluster:
 #### Using LDAP
 The default RadiantOne configuration assumes that clients accessing RadiantOne FID are managed by the same Kubernetes cluster and will use an internal service to query RadiantOne FID as opposed to an externally facing ELB. This is dictated by the ```type: NodePort``` keyword in the .yaml file that describes the RadiantOne FID LDAP ports. 
 
-{==Note - If you changed the .yaml file prior to deploying, and set ```type: LoadBalancer```, then clients would access RadiantOne FID via LDAP through an Elastic Load Balancer (ELB).==}
+<mark>Note - If you changed the .yaml file prior to deploying, and set ```type: LoadBalancer```, then clients would access RadiantOne FID via LDAP through an Elastic Load Balancer (ELB).</mark>
 
 From the Kubernetes web console, navigate to Discovery and Load Balancing -> Services. You can see the service name and port (LDAP port 2389 by default) in the section matching the label you defined for the RadiantOne deployment. An example is shown below.
-<br>
-<img src="../img/lbservice.jpg" alt="Load Balancer Service" style="height: 400px; width:1000px;"/>
-<br>
+
+<img src="./img/lbservice.jpg" alt="Load Balancer Service" style="height: 400px; width:1000px;"/>
+
 
 #### Using Web Services (SCIM, DSML/SPML, REST)
 From the Kubernetes web dashboard, navigate to Discovery and Load Balancing -> Services.
@@ -264,25 +257,22 @@ The steps to apply a patch are outlined below.
 1. From the Kubernetes web dashboard -> Workloads -> Stateful Sets, click the 3 dots next to the one representing the RadiantOne node. 
 
 2. Click View/edit YAML.
-<br>
-<img src="../img/edityaml.jpg" alt="Edit YAML" style="height: 200px; width:1000px;"/>
-<br>
+<img src="./img/edityaml.jpg" alt="Edit YAML" style="height: 200px; width:1000px;"/>
+
 
 3. Update the image version in the fid-aws.yaml file to indicate a newer patch version of RadiantOne. The location to update is shown in the image below, and indicates an example of v7.3.9.
-<br>
-<img src="../img/editstatefulset.jpg" alt="Edit Stateful Set YAML" style="height: 300px; width:1000px;"/>
-<br>
+
+<img src="./img/editstatefulset.jpg" alt="Edit Stateful Set YAML" style="height: 300px; width:1000px;"/>
+
  
 Once the image is modified, the rolling update starts. This can take quite a bit of time to perform. Stateful sets are updated in order from the highest number to the lowest number. For three RadiantOne nodes, the fid-2 node is updated first, followed by the fid-1 node and finally the fid-0 node. The pod gets stopped and the latest image (indicated in the yaml file) is compared to the current version of RadiantOne on the node. If the current version is less than the version specified in the yaml, then the RadiantOne update process is executed on the node. This process is logged in the RadiantOne logs on the node. You can acces the logs from the Kubernetes web dashboard -> Workloads -> Pods -> <RadiantOne pod> by clicking LOGS.
-<br>
-<br>
-<img src="../img/logs.jpg" alt="Logs" style="height: 75px; width:1000px;"/>
-<br>
+
+<img src="./img/logs.jpg" alt="Logs" style="height: 75px; width:1000px;"/>
+
  
 An example of the log is shown below.
-<br>
-<img src="../img/logcontents.jpg" alt="Log Contents" style="height: 300px; width:1000px;"/>
-<br>
+<img src="./img/logcontents.jpg" alt="Log Contents" style="height: 300px; width:1000px;"/>
+
  
 <mark>Note – A backup of the existing install is made to vds-<version>.tar prior to updating.</mark>
 
