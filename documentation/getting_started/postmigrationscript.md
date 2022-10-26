@@ -13,9 +13,9 @@ The migrate script checks for the configure_fid.sh script and executes it after 
 1. On the machine where the kubectl utility is installed, create a text file named configure_fid.sh.
 
 2. In an editor, edit configure_fid.sh and add the commands that should be executed after the configuration is imported into the RadiantOne production pod. There should be one command per line in the script file. Some common commands are ones that update data sources to point to production instances. An example of a script containing commands to update two data sources (named addomain1, and addomain2) to point to production instances is shown below.
-<br>
-<img src="/img/configurefidscriptsample.jpg" alt="Post Migration Script Sample" style="height: 150px; width:1000px;"/>
-<br> 
+
+![Post Migration Script Sample](/img/configurefidscriptsample.jpg)
+
 
 # Copy Script
 1. On the RadiantOne leader pod (where the configuration is going to be imported), create a folder named scripts in /opt/radiantone. 
