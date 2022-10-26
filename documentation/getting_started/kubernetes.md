@@ -53,7 +53,7 @@ Before installing RadiantOne nodes, make sure the ZooKeeper service is running. 
 2. Click the Stateful Set corresponding to your ZooKeeper deployment.
 3. In the Pods section, click zk-0 (in this example the name used in the ZooKeeper yaml is “zk”).
 <br>
-<img src="../img/kubernetesdashboard.jpg" alt="Kubernetes Dashboard" style="height: 250px; width:1000px;"/>
+<img src="./img/kubernetesdashboard.jpg" alt="Kubernetes Dashboard" style="height: 250px; width:1000px;"/>
 <br>
 4. Click ->EXEC, this opens a new browser window.
 5. In the SHELL window, run this command: 
@@ -65,15 +65,15 @@ export JAVA_HOME=/opt/radiantone/rli-zookeeper-external/jdk/jre/;/opt/radiantone
 <mark>Note - Use Shift+Insert to Paste.</mark><br><br>
 The returned value should indicate “Mode: follower” or “Mode: Leader”. The ZooKeeper in the following example is a follower node.
 <br>
-<img src="../img/followerzk.jpg" alt="Follower ZK Node" style="height: 150px; width:1000px;"/>
+<img src="./img/followerzk.jpg" alt="Follower ZK Node" style="height: 150px; width:1000px;"/>
 <br>
  
 6. Close the Browser tab and go back to the Kubernetes Dashboard.
 7. Repeat steps 3-6 for the other ZooKeeper nodes: zk-1 and zk-2. Following this example, one should be a follower node and one should be a leader node. The results are shown below.
 <br>
-<img src="../img/followerzk2.jpg" alt="Follower ZK Node 2" style="height: 150px; width:1000px;"/>
+<img src="./img/followerzk2.jpg" alt="Follower ZK Node 2" style="height: 150px; width:1000px;"/>
 <br>
-<img src="../img/leaderzk.jpg" alt="Leader ZK Node" style="height: 125px; width:1000px;"/>
+<img src="./img/leaderzk.jpg" alt="Leader ZK Node" style="height: 125px; width:1000px;"/>
 <br>
  
 ##### Checking the ZooKeeper Service via HTTP
@@ -293,16 +293,14 @@ To remove a deployment, delete the stateful sets, services, config maps, persist
 #### Delete Stateful Sets
 
 1. From the Kubernetes Control Panel -> Overview -> Stateful Sets section, click the 3 dots next to the RadiantOne FID stateful set (in the example shown below, this is the one named fid738) and choose Delete. Click Delete again to confirm the deletion.
-<br>
-<img src="../img/deletestatefulset.jpg" alt="Delete Stateful Set" style="height: 300px; width:1000px;"/>
-<br>
+<img src="./img/deletestatefulset.jpg" alt="Delete Stateful Set" style="height: 300px; width:1000px;"/>
+
  
 2. From the Kubernetes Control Panel -> Overview -> Stateful Sets section, click the 3 dots next to the ZooKeeper stateful set (in the example shown above, this is the one named zk) and choose Delete. Click Delete again to confirm the deletion.
 
 3. From the Kubernetes Control Panel -> Overview -> Services section, click the 3 dots next to the RadiantOne Control Panel service (in the example shown below, this is the one named fid738-cp) and choose Delete. Click Delete again to confirm the deletion.
-<br>
-<img src="../img/deletecpstatefulset.jpg" alt="Delete Control Panel Stateful Set" style="height: 350px; width:1000px;"/>
-<br>
+
+![Delete Control Panel Stateful Set](./img/deletecpstatefulset.jpg)
 
 #### Delete Services  
 
@@ -313,27 +311,25 @@ To remove a deployment, delete the stateful sets, services, config maps, persist
 #### Delete Config Maps
 
 From the Kubernetes Control Panel -> Config and Storage -> Config Maps section, click the 3 dots next to the RadiantOne environment variables and choose Delete. Click Delete again to confirm the deletion.
-<br>
-<img src="../img/deleteconfigmaps.jpg" alt="Delete Config Maps" style="height: 350px; width:1000px;"/>
-<br>
+
+![Delete Config Maps](./img/deleteconfigmaps.jpg)
 
 #### Delete Persistent Volume Claims 
 
 1. In the Config and Storage -> Persistent Volume Claims section, click the 3 dots next to the RadiantOne persistent volume claim and choose Delete. Click Delete again to confirm the deletion.
 
 2. Repeat the previous step to delete the persistent volume claims for all RadiantOne nodes and all ZooKeeper nodes.
-<br>
-<img src="../img/deletepersistentvolumeclaims.jpg" alt="Delete Persistent Volume Claims" style="height: 350px; width:1000px;"/>
-<br>
+
+![Delete Persistent Volume Claims](./img/deletepersistentvolumeclaims.jpg)
 
 #### Delete Persistent Volumes 
 
 1. In the Cluster -> Persistent Volumes section, identify all of the nodes associated with the persistent volume. The value in the claim column is prefixed with the name of the namespace (e.g. demo/). Click the 3 dots next to the RadiantOne node associated with the persistent volume (it should have Status=Released) and choose Delete. Click Delete again to confirm the deletion.
 
 2. Repeat step 1 for all persistent volumes associated with RadiantOne and ZooKeeper nodes.
-<br>
-<img src="../img/deletepersistentvolumes.jpg" alt="Delete Persistent Volumes" style="height: 250px; width:1000px;"/>
-<br>
+ 
+![Delete Persistent Volumes](./img/deletepersistentvolumes.jpg)
+
 
  
 
