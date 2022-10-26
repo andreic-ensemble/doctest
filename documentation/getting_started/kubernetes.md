@@ -284,7 +284,7 @@ An example of the log is shown below.
 <img src="../img/logcontents.jpg" alt="Log Contents" style="height: 300px; width:1000px;"/>
 <br>
  
-{==Note – A backup of the existing install is made to vds-<version>.tar prior to updating.==}
+<mark>Note – A backup of the existing install is made to vds-<version>.tar prior to updating.</mark>
 
 
 ### Deleting Deployments
