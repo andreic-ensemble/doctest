@@ -1,3 +1,8 @@
+---
+title: Terraform
+description: Terraform
+---
+
 # **FID on EKS using Terraform**
 
 
@@ -147,10 +152,7 @@ terraform destroy [options]
 | private_subnet_tags| Additional tags for the private subnets
 | application_name| Name of the application
 | application_name2|
-|
-|
-|
-|
+
 
 
 
