@@ -1,8 +1,13 @@
+---
+title: configmap
+description: configmap
+---
+
 # Overview
 Sections in the configmap.yaml file to customize:
 <br>
 
-{==Note – Do not use “TABS” for spacing in the .yaml file.  Use the space bar to indent as needed.==}
+<mark>Note – Do not use “TABS” for spacing in the .yaml file.  Use the space bar to indent as needed.</mark>
 
 # ZooKeeper Service
 Your ZooKeeper Service as described in the ZooKeeper yaml file.
