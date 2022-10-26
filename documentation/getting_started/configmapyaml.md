@@ -5,7 +5,6 @@ description: configmap
 
 # Overview
 Sections in the configmap.yaml file to customize:
-<br>
 
 <mark>Note – Do not use “TABS” for spacing in the .yaml file.  Use the space bar to indent as needed.</mark>
 
