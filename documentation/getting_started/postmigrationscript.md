@@ -1,3 +1,8 @@
+---
+title: Post Migration Script
+description: Post Migration Script
+---
+
 # Post Migration Script
 Additional configuration commands can be listed in a script file named configure_fid.sh. The script should contain one command per line in the file and be located in a folder named scripts (e.g. /opt/radiantone/scripts) on the RadiantOne target pod. Any command available in the vdsconfig utility can be included in the configure_fid.sh script. 
 For information on the vdsconfig commands, see the RadiantOne Command Line Configuration guide.
