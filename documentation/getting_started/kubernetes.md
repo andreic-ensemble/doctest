@@ -1,3 +1,8 @@
+---
+title: Kubernetes
+description: Kubernetes
+---
+
 # Kubernetes
 You can use Kubernetes to orchestrate the configuration and deployment of RadiantOne. Radiant Logic provides DevOps images for deployments on cloud platforms such as Amazon Web Services (AWS) using Amazon Elastic Kubernetes Service (EKS) and Microsoft Azure Kubernetes Service (AKS).
 
@@ -57,7 +62,7 @@ Before installing RadiantOne nodes, make sure the ZooKeeper service is running. 
 export JAVA_HOME=/opt/radiantone/rli-zookeeper-external/jdk/jre/;/opt/radiantone/rli-zookeeper-external/zookeeper/bin/zkServer.sh status
 ```
 <br>
-{==Note - Use Shift+Insert to Paste.==}<br><br>
+<mark>Note - Use Shift+Insert to Paste.</mark><br><br>
 The returned value should indicate “Mode: follower” or “Mode: Leader”. The ZooKeeper in the following example is a follower node.
 <br>
 <img src="../img/followerzk.jpg" alt="Follower ZK Node" style="height: 150px; width:1000px;"/>
@@ -238,7 +243,7 @@ From the Kubernetes web dashboard, navigate to Discovery and Load Balancing -> S
  
 The external endpoints, which point to the AWS Elastic Load Balancer (ELB) that is in front of the RadiantOne services, are shown. There are four external endpoints configured. Two point to the Control Panel (one is for the non-ssl port and the other is for the ssl port). Two point to the RadiantOne web services (SCIM, DSML/SPML, REST/ADAP) ports. Hover over the endpoint to see the server and port. Give this information to clients to connect to RadiantOne on the web services ports. 
 
-{==Note - You can map the ELB endpoint to a friendly DNS name by creating a Hosted Zone in AWS.==}
+<mark>Note - You can map the ELB endpoint to a friendly DNS name by creating a Hosted Zone in AWS.</mark>
 
 
 ### Applying RadiantOne Patches
