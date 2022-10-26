@@ -33,7 +33,7 @@ The StatefulSet manifest, zk-aws.yaml, creates a ZooKeeper cluster that consists
 1. Update zk-aws.yaml file if necessary. 
 You can modify the ZooKeeper ports, number of nodes (ZOOKEEPER_FLEET_SIZE) in the ensemble (3 is the default, but you can make it 5 if needed), name of the Kubernetes service linked to the ZooKeeper nodes (make sure this matches what is defined in the configmap.yaml).
 <br>
-{==Note – Do not use “TABS” for spacing in the .yaml file.  Use the space bar to indent as needed.==}
+<mark>Note – Do not use “TABS” for spacing in the .yaml file.  Use the space bar to indent as needed.</mark>
 <br>
 2. Open a command prompt and navigate to the location where you have installed the kubectl command line tool. 
 
@@ -42,8 +42,8 @@ You can modify the ZooKeeper ports, number of nodes (ZOOKEEPER_FLEET_SIZE) in th
 kubectl --namespace=prod apply -f zk-aws.yaml
 ```
 <br>
-{==Note – if no namespace is used in the Kubernetes cluster, you can omit the
---namespace property.==}
+<mark>Note – if no namespace is used in the Kubernetes cluster, you can omit the
+--namespace property.</mark>
 <br>
 
 ##### Validating the ZooKeeper Service
