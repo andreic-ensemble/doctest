@@ -1,13 +1,17 @@
+---
+title: Global Identity Builder Guide TOC
+description: Global Identity Builder Guide TOC Description
+---
 
 [Chapter 1: Introduction [3](#chapter-1-introduction)](/global-identity-builder-guide/chapter-1-introduction)
 
-[Accessing the Global Identity Builder Tool [5](#accessing-the-global-identity-builder-tool)](#accessing-the-global-identity-builder-tool)
+[Accessing the Global Identity Builder Tool [5](#accessing-the-global-identity-builder-tool)](/global-identity-builder-guide/accessing-the-global-identity-builder-tool)
 
-[Chapter 2: Concepts [6](#chapter-2-concepts)](#chapter-2-concepts)
+[Chapter 2: Concepts [6](#chapter-2-concepts)](/global-identity-builder-guide/chapter-2-concepts)
 
-[Project [6](#project)](#project)
+[Project [6](#project)](/global-identity-builder-guide/project)
 
-[Identity Correlation [6](#identity-correlation)](#identity-correlation)
+[Identity Correlation [6](#identity-correlation)](/global-identity-builder-guide/identity-correlation)
 
 [Identity Source [6](#identity-source)](#identity-source)
 
