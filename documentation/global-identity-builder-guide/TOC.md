@@ -3,6 +3,8 @@ title: Global Identity Builder Guide TOC
 description: Global Identity Builder Guide TOC Description
 ---
 
+# Global Identity Builder Guide {global identity builder guide}
+
 [Chapter 1: Introduction [3](#chapter-1-introduction)](/global-identity-builder-guide/chapter-1-introduction)
 
 [Accessing the Global Identity Builder Tool [5](#accessing-the-global-identity-builder-tool)](/global-identity-builder-guide/accessing-the-global-identity-builder-tool)
