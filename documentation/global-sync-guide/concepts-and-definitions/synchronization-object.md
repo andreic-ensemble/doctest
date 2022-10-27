@@ -6,6 +6,6 @@ Any objects listed in a catalog of a data source, can act as a synchronization o
 
 LDAP synchronization objects are generally based on a specific class type (e.g. `user`, `inetOrgPerson`, `group`, `groupOfUniqueNames`, etc.). If you have the need to synchronize many object types, or require more of an LDAP replication, you can leverage a generic "All Objects" instead of trying to work individually on specific object classes. To use a generic "All Objects", edit the pipeline Transformation component and go to Mappings. In the Source Object drop-down list, select `-- All Objects --` as shown below. The destination object may or may not be `-- All Objects --` as well.
 
-![An image showing Edit Pipeline Mapping with "All Objects" selected for both "Source Object" and "Destination Object"](./media/image4.png)
+![An image showing Edit Pipeline Mapping with "All Objects" selected for both "Source Object" and "Destination Object"](../media/image4.png)
 
 Generic (All Objects) Synchronization Object
