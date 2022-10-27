@@ -27,7 +27,7 @@ description: Global Synchronization Guide TOC Description
 - [Transformation](#transformation)
   - [Transformation Configuration](/global-sync-guide/transformation/transformation-configuration)
   - [Attribute Mappings](/global-sync-guide/transformation/attribute-mappings)
-- [Script](/global-sync-guide/transformation/script)
+- [Script](/global-sync-guide/script)
 - [Rules](#rules)
   - [Rules](/global-sync-guide/rules/rules)
   - [Configure Rule Variables](/global-sync-guide/rules/configure-rule-variables)
