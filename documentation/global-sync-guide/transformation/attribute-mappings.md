@@ -47,13 +47,13 @@ Attribute mapping can be accomplished with any combination of the following: map
 
 The Destination DN expression is used generate the DN for the entry in the destination and is based on one or more attributes from the source event. As an example, if the destination in a sync pipeline was the `object=SUPPLIERS,o=hrdatabase` view shown in the screen below, the Destination DN syntax could look like: `SUPPLIERS=${employeeNumber},object=SUPPLIERS,o=hrdatabase` where `${employeeNumber}` indicates the employeeNumber attribute value from the source event is used to comprise the RDN (e.g. `SUPPLIERS=1234,object=SUPPLIERS,o=hrdatabase`). When processing insert and update events with attribute mappings, a lookup is performed in the destination based on the Destination DN expression, to see if the entry exists. If the entry does not exist, it is inserted. If it does exist, the entry is updated.
 
-![Example of Sync Destination](../media/image41.png)
+![Example of Sync Destination](../../media/image41.png)
 
 Example of Sync Destination
 
 The corresponding Destination DN Expression to match the example described above is shown below.
 
-![Example Destination DN Expression](../media/image42.png)
+![Example Destination DN Expression](../../media/image42.png)
 
 Example Destination DN Expression
 
