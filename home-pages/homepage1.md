@@ -30,10 +30,10 @@ Best recommendations for deploying FID across site(s), based on the cluster arch
 
 <section>
   
-  > [Single data center](/fid_architectural_blueprints/Single data center)  
+  > [Single data center](/fid_architectural_blueprints/single_data_center)  
   > Ora erat instruxit munus. Hae quoque fontibus atrorum adiit iratus iustitia iaculum neci Nesso, ritus age vidit! Nox iugeribus, ibi caput est magis Aetola dixit putatur me proelia manus sanguine oculorum colitur! 
   
-  > [ Mutliple data centers](/fid_architectural_blueprints/Mutliple data centers)  
+  > [ Mutliple data centers](/fid_architectural_blueprints/mutliple_data_centers)  
   > Vita sum mortale fecistis, quos umbra auditos Pandione aegro Astypaleia adii aut pactus nare, Phrygiisque, tibi. Quod adspexit? Saltus non vixque utque aperit quae gentibus aptos.
   
 </section>
