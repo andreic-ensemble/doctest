@@ -11,13 +11,13 @@ This site provides resources for DevOps professionals to deploy the RadiantOne p
 
 <section>
   
-  > [Release Notes](#Release Notes)  
+  > [Release Notes](/#Release Notes)  
   > Learn how RadiantOne makes it possible to harness your identity data to drive better business outcomes, improve security and compliance posture, increase speed-to-market, and more. 
   
-  > [Getting started guide](#Getting started guide)  
+  > [Getting started guide](/#Getting started guide)  
   > This guide provides a high-level overview of the RadiantOne administration consoles. The identity service wizards are also discussed along with guidance to help determine which service to use. 
 
-  > [Troubleshooting guide](#Getting started guide)  
+  > [Troubleshooting guide](/#Getting started guide)  
   > Find answers to frequently asked questions and a guide for troubleshooting common errors in RadiantOne.
    
 </section>
