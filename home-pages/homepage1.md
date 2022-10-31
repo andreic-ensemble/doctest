@@ -11,7 +11,7 @@ This site provides resources for DevOps professionals to deploy the RadiantOne p
 
 <section>
   
-  > [Release Notes](/#Release Notes)  
+  > [Release Notes](/getting_started/docker)  
   > Learn how RadiantOne makes it possible to harness your identity data to drive better business outcomes, improve security and compliance posture, increase speed-to-market, and more. 
   
   > [Getting started guide](/#Getting started guide)  
