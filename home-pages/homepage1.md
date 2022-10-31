@@ -11,14 +11,14 @@ This site provides resources for DevOps professionals to deploy the RadiantOne p
 
 <section>
   
-  > [Release Notes](/getting_started/docker)  
-  > Learn how RadiantOne makes it possible to harness your identity data to drive better business outcomes, improve security and compliance posture, increase speed-to-market, and more. 
+  > [SCIM](/web_services/SCIM)  
+  > The System for Cross-domain Identity Management (SCIM) specification automates user identity management between identity domains. 
   
-  > [Getting started guide](/#Getting started guide)  
-  > This guide provides a high-level overview of the RadiantOne administration consoles. The identity service wizards are also discussed along with guidance to help determine which service to use. 
+  > [HTTP/REST](/web_services/HTTP)  
+  > The REST interface supports all LDAP operations and the ability to navigate the directory tree. Wrapping these operations and the progressive disclosure capabilities that exist in LDAP directories into a REST interface opens it up to the web.
 
-  > [Troubleshooting guide](/#Getting started guide)  
-  > Find answers to frequently asked questions and a guide for troubleshooting common errors in RadiantOne.
+  > [SPML](/web_services/SPML)  
+  > SPML is an XML-based provisioning request-and-response protocol. RadiantOne supports SPML v2 and plays the role of a Provisioning Service Provider (PSP).
    
 </section>
 
