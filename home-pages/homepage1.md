@@ -7,7 +7,9 @@ description: Homepage 1 Description
 
 This site provides resources for DevOps professionals to deploy the RadiantOne platform. Docker images and Kubernetes for orchestration allows for easily deploying the RadiantOne platform in the cloud.
 
-# Useful documents
+# Web Services
+
+Web services API's A rich set of HTTP-based API's have been developped on top of LDAP, to provide broader access to the Universal directory, using modern protocols, such as SCIM, SPML and other web services API's, are described in this section
 
 <section>
   
@@ -20,6 +22,20 @@ This site provides resources for DevOps professionals to deploy the RadiantOne p
   > [SPML](/web_services/SPML)  
   > SPML is an XML-based provisioning request-and-response protocol. RadiantOne supports SPML v2 and plays the role of a Provisioning Service Provider (PSP).
    
+</section>
+
+# FID Architectural Blueprints for HA and failover.
+
+Best recommendations for deploying FID across site(s), based on the cluster architecture, for providing high availability and failover.
+
+<section>
+  
+  > [Single data center](/fid_architectural_blueprints/Single data center)  
+  > Ora erat instruxit munus. Hae quoque fontibus atrorum adiit iratus iustitia iaculum neci Nesso, ritus age vidit! Nox iugeribus, ibi caput est magis Aetola dixit putatur me proelia manus sanguine oculorum colitur! 
+  
+  > [ Mutliple data centers](/fid_architectural_blueprints/Mutliple data centers)  
+  > Vita sum mortale fecistis, quos umbra auditos Pandione aegro Astypaleia adii aut pactus nare, Phrygiisque, tibi. Quod adspexit? Saltus non vixque utque aperit quae gentibus aptos.
+  
 </section>
 
 # Cloud Deployments
