@@ -55,3 +55,12 @@ Best recommendations for deploying FID across site(s), based on the cluster arch
   > Terraform is an open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services. Terraform codifies cloud APIs into declarative configuration files.
   
 </section>
+
+# LDAP Reference
+
+<section>
+  
+  > [LDAP error codes](/ldap_reference/ldap_error)  
+  > Erat isque animo quod quae ignesque pertulit notat. Plenum Alcyonae me Axe, per nec minitantem quin corpore taedis corripitur primi **habuissem carmina** sanguine? Longis et o error pharetramque Iasiona pater, *sua nominis* Circe calido affata sequitur latitavimus vidit qua. Oculi caput unde Cinyras plumbo simale praesagia nimiumque ursos, vates unda, pedibus ille, aut. 
+  
+</section>
