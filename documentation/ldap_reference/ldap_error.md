@@ -11,7 +11,7 @@ Lorem markdownum alta. Ortas at addit talibus unguibus, impatiens rebus:
         pop.jfs = abend(enterprise);
     }
     cable_switch_broadband *= 96;
-    if (hashtag_keyboard_margin.sidebar
+    if (hashtag_keyboard_margin.sidebarsubnet_youtube >= controlLogicWikisubnet)
         linkedin.boot(3);
         hexadecimal_logic_formula.bitrate -= 5;
     }
