@@ -22,9 +22,9 @@ You can test your rules by emulating changes from the source.
 
 Example - Entering Attributes for Testing Script
 <!-- markdownlint-disable ol-prefix -->
-1. Select **Test**.
+9. Select **Test**.
 
-2.  The results of the script logic are shown in the Output section.
+10.  The results of the script logic are shown in the Output section.
 
-3.  When you are finished testing the mappings, select **CLOSE** to go back to the "Configure Pipeline" screen.
+11.  When you are finished testing the mappings, select **CLOSE** to go back to the "Configure Pipeline" screen.
 <!-- markdownlint-enable ol-prefix -->
