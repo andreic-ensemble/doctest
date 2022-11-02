@@ -1,6 +1,6 @@
 # Manage Synchronization
 
-## Viewing Logs
+## View Logs
 
 Transformation and apply components log to `{RLI_HOME}\vds_server\logs\sync_engine\sync_engine.log` on the RadiantOne node where the sync engine processor that is assigned for the pipeline is running. If RadiantOne is deployed in a cluster, a sync engine processor can be running on one or more nodes and the pipeline processing is distributed across them. Check for the `{RLI_HOME}\vds_server\logs\sync_engine\sync_engine.log` on each cluster node to find the correct log file. Or you can use the Global Sync tab to download the corresponding sync_engine.log file by selecting the topology and selecting **Configure** next to the pipeline. Select the **Apply** component and in the Log Viewer section, select the **Download** button.
 
@@ -21,11 +21,11 @@ VDS – Sync Engine log file level is set to **DEBUG**. You can check the log le
 
 Sync Engine Log Settings
 
-## Suspending Synchronization Components
+## Suspend Synchronization Components
 
 Once a pipeline is configured, all synchronization components start automatically. For complete details on starting the synchronization components, please see the RadiantOne Deployment and Tuning Guide.
 
-## Monitoring the Synchronization Process
+## Monitor the Synchronization Process
 
 The number of entries processed and the number of entries queued by the Transformation component can be viewed from the Main Control Panel -> Global Sync tab. Select the topology on the left. The pipelines displayed on the right indicate the number of entries processed by the transformation and apply connectors.
 
@@ -59,7 +59,7 @@ When this alert is enabled, every time the pipeline state changes (e.g. a pipeli
 
 When this alert is enabled, indicate a queue size threshold. The threshold size is the maximum number of entries in the queue awaiting processing. Once this number is reached, a file alert is triggered in `{RLI_HOME}/logs/alerts.log`. This indicates that messages are accumulating in the queue, and an administrator should check the apply process to see if there are issues causing the changes to not get processed and applied fast enough.
 
-## Replaying Failed Messages
+## Replay Failed Messages
 
 Messages that fail to get successfully applied to a destination, are categorized due to either a connection error to the destination, or any other non-communication related error (e.g. object class violation).
 
@@ -84,7 +84,7 @@ After the number of retries is exhausted, the message is written into the queue 
 
 Global Sync Flow for Failed Messages not related to a Communications Error
 
-### Replaying Messages in the Dead Letter Queue
+### Replay Messages in the Dead Letter Queue
 
 To replay failed messages from the dead letter queue, you can use the vdsconfig command line utility with the following command.
 
