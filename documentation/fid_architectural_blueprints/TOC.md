@@ -6,10 +6,10 @@ description: FID Architectural Blueprints TOC Description
 # FID Architectural Blueprints {FID Architectural Blueprints}
 
 - [Single Data Centers](single_data_center/mediam_loret)
-  - [Mediam Loret](single_data_center/mediam_loret)
-  - [Pectore Regis](single_data_center/pectore_regis)
+  - [Mediam Loret](single_data_center/mediam_loret.md)
+  - [Pectore Regis](single_data_center/pectore_regis.md)
 - [Multiple Data Centers](multiple_data_centers/facibus)
-  - [Fcibus](multiple_data_centers/facibus)
-  - [Semperque](multiple_data_centers/semperque)
-  - [Succinctis](multiple_data_centers/succinctis)
+  - [Fcibus](multiple_data_centers/facibus.md)
+  - [Semperque](multiple_data_centers/semperque.md)
+  - [Succinctis](multiple_data_centers/succinctis.md)
  
