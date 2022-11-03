@@ -9,7 +9,7 @@ This site provides resources for DevOps professionals to deploy the RadiantOne p
 
 # Web Services
 
-Web services API's A rich set of HTTP-based API's have been developped on top of LDAP, to provide broader access to the Universal directory, using modern protocols, such as SCIM, SPML and other web services API's, are described in this section
+Web services API's A rich set of HTTP-based API's have been developed on top of LDAP, to provide broader access to the Universal directory, using modern protocols, such as SCIM, SPML and other web services API's, are described in this section
 
 <section>
   
