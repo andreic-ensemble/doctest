@@ -5,7 +5,7 @@ description: FID Architectural Blueprints TOC Description
 
 # FID Architectural Blueprints {FID Architectural Blueprints}
 
-- [Single Data Centers]{#single_data_center}
+- [Single Data Centers](#single_data_center)
   - [Mediam Loret](single_data_center/mediam_loret.md)
   - [Pectore Regis](single_data_center/pectore_regis.md)
 - [Multiple Data Centers](multiple_data_centers/#)
