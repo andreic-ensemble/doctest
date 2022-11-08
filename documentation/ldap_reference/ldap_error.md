@@ -3,6 +3,9 @@
 ## Una lapides via quod amplectique manu triformis
 
 Lorem markdownum alta. Ortas at addit talibus unguibus, impatiens rebus:
+```
+kubectl --namespace=prod controlLogicWikisubnet sidebarsubnet_youtube >= apply -f zk-aws.yaml
+```
 **terrent ab servor** loco.
 
     if (subnet_youtube >= controlLogicWiki) {
