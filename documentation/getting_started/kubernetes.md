@@ -88,8 +88,8 @@ When “is_read_only” returns “read_only” : false, this means the ZooKeepe
 The StatefulSet manifests (configmap.yaml and fid.yaml) create a RadiantOne node. After the node is deployed, you can scale up the number of nodes as needed. Although the Kubernetes web console can be used to create new stateful sets, the steps below leverage the kubectl command line tool. Perform the following steps on the machine where you have downloaded the kubectl command line utilty and saved the yaml files.
 
 ##### Installation
-1. Update the [configmap.yaml](configmapyaml.md) file.
-2. Update the [fid-aws.yaml](fidyaml.md) file.
+1. Update the [configmap.yaml](./configmapyaml.md) file.
+2. Update the [fid-aws.yaml](./fidyaml.md) file.
 3. Open a command prompt and navigate to the location where you installed the kubectl command line utilty.
 4. To create the RadiantOne FID StatefulSet, you can reference the folder that contains both the configmap.yaml and fid-aws.yaml files. Assuming both of these files are located in a folder located at C:\Kubernetes\FID, the following command can be used.
 ```
