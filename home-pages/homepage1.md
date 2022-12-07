@@ -7,7 +7,7 @@ description: Homepage 1 Description
 
 This site provides resources for DevOps professionals to deploy the RadiantOne platform. Docker images and Kubernetes for orchestration allows for easily deploying the RadiantOne platform in the cloud.
 
-# Web Services
+## Web Services
 
 Web services API's A rich set of HTTP-based API's have been developed on top of LDAP, to provide broader access to the Universal directory, using modern protocols, such as SCIM, SPML and other web services API's, are described in this section
 
@@ -24,7 +24,7 @@ Web services API's A rich set of HTTP-based API's have been developed on top of 
    
 </section>
 
-# FID Architectural Blueprints for HA and failover.
+## FID Architectural Blueprints for HA and failover.
 
 Best recommendations for deploying FID across site(s), based on the cluster architecture, for providing high availability and failover.
 
@@ -38,7 +38,7 @@ Best recommendations for deploying FID across site(s), based on the cluster arch
   
 </section>
 
-# Cloud Deployments
+## Cloud Deployments
 
 <section>
   
@@ -51,12 +51,12 @@ Best recommendations for deploying FID across site(s), based on the cluster arch
   > [Helm](/getting_started/helm)  
   > Helm charts for FID and Zookeeper deployment
   
-   > [Terraform](/getting_started/terraform)  
+  > [Terraform](/getting_started/terraform)  
   > Terraform is an open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services. Terraform codifies cloud APIs into declarative configuration files.
   
 </section>
 
-# LDAP Reference
+## LDAP Reference
 
 <section>
   
