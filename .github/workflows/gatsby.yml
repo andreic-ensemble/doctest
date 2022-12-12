@@ -3,6 +3,7 @@ name: Remote Dispatch Action Initiator
 on:
   push:
     tags:
+      -'master'
       - 'v[0-9]*\..*'
   repository_dispatch:
 
