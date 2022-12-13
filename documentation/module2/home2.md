@@ -78,3 +78,4 @@ This property accepts a value of `true` or `false` and dictates how the connecto
 
 If the connector should ignore non-sequential change IDs, and process all changes immediately, set the property to `false`.
 
+
