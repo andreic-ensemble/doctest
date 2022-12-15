@@ -15,4 +15,4 @@ jobs:
           curl -X POST https://api.github.com/repos/andreic-ensemble/codetest/dispatches \
           -H 'Accept: application/vnd.github.everest-preview+json' \
           -u ${{ secrets.ACCESS_TOKEN }} \
-          --data '{"event_type": "ping", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
+          --data '{"event_type": "initiate_deploy", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
