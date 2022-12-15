@@ -129,3 +129,4 @@ The `Failover Algorithm` property allows you to determine how the cursor value g
 For example, all RadiantOne nodes in a cluster have the same changeNumber in `cn=changelog`. |
 | 4 | Sets cursor to the last changenumber of the failover server. In the example described above, if replica 1 is the failover server that gets used, changenumber of 99 is used. If replica 2 is the failover server, changenumber of 97 is used. | You do not want to replay any events during failover. This may result in the loss of many events. |
 
+
