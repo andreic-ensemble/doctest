@@ -29,7 +29,7 @@ This guide is broken down into the following chapters:
 [Introduction](introduction.md)
 This chapter offers a quick introduction to this guide in addition to how the manual is organized and how to contact Radiant Logic technical support.
 
-[Concept and Definitions](/global-sync-guide/concepts-and-definitions/topology.md#Pipeline ID)
+[Concept and Definitions](/global-sync-guide/concepts-and-definitions/topology.md#PipelineID)
 This chapter introduces the main concepts that are essential to understand for configuring and administering Global Synchronization.
 
 [Configuration](configuration/high-level-steps.md)
