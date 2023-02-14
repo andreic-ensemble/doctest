@@ -67,7 +67,7 @@ Prosciutto ground round drumstick rump pork chop turducken tongue tail turkey po
 <br/><br/>
 
 ```
->[!important]
+>[!info]
 >The connector must be restarted for this property to take effect.
 ```
 
