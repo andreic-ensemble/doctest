@@ -20,7 +20,7 @@ $ helm install my-release radiantone/fid
 
 Once Helm has been set up correctly, add the repo as follows:
 
-```
+```shellsession
 helm repo add radiantone https://radiantlogic-devops.github.io/helm
 ```
 
