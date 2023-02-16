@@ -12,8 +12,8 @@ Helm's [documentation](https://helm.sh/docs) to get started.
 ## TL;DR
 
 ```shellsession
-$ helm repo add radiantone https://radiantlogic-devops.github.io/helm
-$ helm install my-release radiantone/fid
+helm repo add radiantone https://radiantlogic-devops.github.io/helm
+helm install my-release radiantone/fid
 ```
 
 ## Add Helm repo
